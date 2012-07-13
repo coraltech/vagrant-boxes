@@ -1,15 +1,15 @@
 Veewee::Session.declare({
   :cpu_count => '1',
   :memory_size=> '512',
-  :disk_size => '20480',
+  :disk_size => '10140',
   :disk_format => 'VDI',
   :hostiocache => 'off',
   :os_type_id => 'Ubuntu_64',
   :iso_file => "ubuntu-12.04-server-amd64.iso",
   :iso_src => "http://releases.ubuntu.com/12.04/ubuntu-12.04-server-amd64.iso",
-  :iso_md5 => "f2e921788d35bbdf0336d05d228136eb",
+  :iso_md5 => 'f2e921788d35bbdf0336d05d228136eb',
   :iso_download_timeout => "1000",
-  :boot_wait => "10",
+  :boot_wait => "4",
   :boot_cmd_sequence => [
     '<Esc><Esc><Enter>',
     '/install/vmlinuz noapic preseed/url=http://%IP%:%PORT%/preseed.cfg ',
